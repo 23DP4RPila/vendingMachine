@@ -1,2 +1,7 @@
-# java-console
-project template for Java CLI app
+# vendingMachine
+
+-tirdzniecības automāts, kurš glabā informāciju par tā saturu
+-produktu cenas
+-strādāšana, lai iegūtu naudu
+-produktu iegāde
+
