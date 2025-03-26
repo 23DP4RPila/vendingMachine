@@ -3,11 +3,12 @@ package lv.rvt;
 import java.util.Scanner;
 
 public class Pirksana {
-    Scanner input = new Scanner(System.in);
 
     public static void pirksanasMenu() {
+        Scanner input = new Scanner(System.in);
+
         System.out.print("\033[H\033[2J");
-        System.out.println("==========PIRKŠANAS IZVĒLNE==========");
+        System.out.println("==========PIRKŠANA==========");
         System.out.println();
         System.out.println("Izvēlieties vienu no šīm opcijām: ");
         System.out.println();
@@ -24,8 +25,12 @@ public class Pirksana {
             } else if (userInput.equals("2")) {
                 // pievienot
             } else if (userInput.equals("3")) {
-                // pievienot
+                Galvenais.galvenaisMenu();
             } 
         }
+    }
+
+    public static void pirksanasGUI() {
+        // pievienot
     }
 }
