@@ -8,6 +8,7 @@ public class Saturs {
         Scanner input = new Scanner(System.in);
 
         System.out.print("\033[H\033[2J");
+        System.out.println();
         System.out.println("==========AUTOMĀTA SATURS==========");
         System.out.println();
         System.out.println("Izvēlieties vienu no šīm opcijām: ");

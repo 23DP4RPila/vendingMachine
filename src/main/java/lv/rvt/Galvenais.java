@@ -7,6 +7,7 @@ public class Galvenais {
         Scanner input = new Scanner(System.in);
 
         System.out.print("\033[H\033[2J");
+        System.out.println();
         System.out.println("==========GALVENĀ IZVĒLNE==========");
         System.out.println();
         System.out.println("Izvēlieties vienu no šīm opcijām: ");
