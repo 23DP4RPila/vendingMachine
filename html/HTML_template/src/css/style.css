@@ -1,0 +1,5 @@
+#grad {
+    height: 100vh  ;
+    background-image: linear-gradient(rgb(115,117,116), rgb(64, 64, 64));
+    background-repeat: no-repeat;
+  }
