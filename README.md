@@ -6,3 +6,4 @@
 -produktu iegāde
 
 # Nepieciešama MENU pārorganizācija - ir liekas pogas un darbības
+# NEPIECIEŠAMS PIEKTDIENAS COMMIT
