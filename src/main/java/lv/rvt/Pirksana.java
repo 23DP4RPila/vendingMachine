@@ -26,7 +26,7 @@ public class Pirksana {
             if (userInput.equals("1")) {
                 pievienotNauduUI();
             } else if (userInput.equals("2")) {
-                pirksanasGUI();
+                pirksanasUI();
             } else if (userInput.equals("3")) {
                 Galvenais.galvenaisMenu();
             } 
@@ -51,9 +51,10 @@ public class Pirksana {
         System.out.println("(3) Pievienot 50 centus");
         System.out.println("(4) Pievienot 1 eiro");
         System.out.println("(5) Pievienot 2 eiro");
-        System.out.println("(6) Atpakaļ uz pirkšanas menu");
+        System.out.println("(6) Atpakaļ uz pirkšanas izvēlni");
         System.out.println("Pievienotā nauda:" + nauda);
         System.out.println();
+        System.out.println("(7) Uz satura izvēlni");
 
         if (userInput == "1") {
             nauda += 0.10;
@@ -72,10 +73,16 @@ public class Pirksana {
             pievienotNauduUI();
         } else if (userInput == "6") {
             pirksanasMenu();
+        } else if (userInput == "7") {
+            Saturs.satursMenu();
         }
     }
 
-    public static void pirksanasGUI() {
+    public static void pirksanasUI() {
+        System.out.print("\033[H\033[2J");
+        System.out.println("Šeit ir plānots:");
+        System.out.println("- pirkumu grozs un tā informācija");
+        System.out.println("- ");
         System.out.println();
         System.out.println();
         System.out.println();
@@ -88,10 +95,7 @@ public class Pirksana {
         System.out.println();
         System.out.println();
         System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println();
+        System.out.println("");
 
 
         

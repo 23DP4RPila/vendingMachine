@@ -2,7 +2,7 @@ package lv.rvt;
 
 import java.util.Scanner;
 
-public class Galvenais {
+public class Galvenais {    
     public static void galvenaisMenu () {
         Scanner input = new Scanner(System.in);
 
