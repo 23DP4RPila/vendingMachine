@@ -17,18 +17,9 @@ Galvenais.galvenaisMenu();
 while (true) {
     izveletais = izvele.nextLine();
 
-if (izveletais.equals("galvenais"))     {
+if (izveletais.equals("galvenais")) {
     Galvenais.galvenaisMenu();
 }
-
-if (izveletais.equals("saturs")){
-    Saturs.satursMenu();
-}
-
-if (izveletais.equals("pirksana")) {
-    Pirksana.pirksanasMenu();
-}
-
 }
 }
 }
