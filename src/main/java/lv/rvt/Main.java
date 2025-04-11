@@ -20,6 +20,15 @@ while (true) {
 if (izveletais.equals("galvenais")) {
     Galvenais.galvenaisMenu();
 }
+
 }
+
+
 }
+
+public static void izveletaisMenu(int id) {
+    // WIP
+}
+
+
 }
