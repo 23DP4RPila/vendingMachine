@@ -3,7 +3,7 @@ package lv.rvt;
 import java.util.Scanner;
 
 public class Galvenais {    
-    public static void galvenaisMenu () {
+    public static void galvenaisMenu() {
         Scanner input = new Scanner(System.in);
 
         System.out.print("\033[H\033[2J");
@@ -12,8 +12,8 @@ public class Galvenais {
         System.out.println();
         System.out.println("Izvēlieties vienu no šīm opcijām: ");
         System.out.println();
-        System.out.println("(1) Rādīt tirdzniecības automāta saturu");
-        System.out.println("(2) Pirkt");
+        System.out.println("(1) Veikt darbības ar tirdzniecības automātu");
+        System.out.println("(2) Iegūt naudu");
         System.out.println("(3) Iziet");
         System.out.println();
         System.out.println("Rakstiet vienu no šiem cipariem, lai veiktu atbilstošo darbību: ");
@@ -21,9 +21,9 @@ public class Galvenais {
         while (true) {
             String userInput = input.nextLine();
                 if (userInput.equals("1")) {
-                    Saturs.satursMenu();
+                    Darbibas.darbibasMenuUI();
                 } else if (userInput.equals("2")) {
-                    Pirksana.pirksanasMenu();
+                    Nauda.naudasOpcijas();
                 } else if (userInput.equals("3")) {
                     System.out.print("\033[H\033[2J");
                     System.out.println(ConsoleColors.RED_BACKGROUND);
@@ -34,8 +34,5 @@ public class Galvenais {
                 } 
             }
         }
-
-
-
-
     }
+

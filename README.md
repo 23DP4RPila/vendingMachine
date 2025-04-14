@@ -6,4 +6,18 @@
 -produktu iegāde
 
 # Nepieciešama MENU pārorganizācija - ir liekas pogas un darbības
-# NEPIECIEŠAMS PIEKTDIENAS COMMIT
+# JAUNAIS MENU-------
+- veikt darbības ar automātu
+    - skatīt saturu
+    - pirkt
+    - pievienot naudu
+- iegūt naudu
+    - azartspēles
+    - darbs
+- iziet
+
+
+## jaunais plāns
+
+apvienot darbības vienā
+- viens liels menu, kurā atrodas visas mazās darbības
