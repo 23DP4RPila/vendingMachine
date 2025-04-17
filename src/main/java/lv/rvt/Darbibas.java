@@ -15,7 +15,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("==========DARBĪBAS==========");
         System.out.println();
-        System.out.println("Izvēliaties vienu no šīm opcijām: ");
+        System.out.println("Izvēlaties vienu no šīm opcijām: ");
         System.out.println();
         System.out.println("(1) Skatīt saturu");
         System.out.println("(2) Pievienot naudu");
@@ -36,7 +36,6 @@ public class Darbibas {
 
     public static void raditSaturu() {
         Scanner input = new Scanner(System.in);
-        String userInput = input.nextLine();
         int skaits;
 
         System.out.print("\033[H\033[2J");
@@ -84,6 +83,8 @@ public class Darbibas {
         System.out.println("(1) Uz izvēlni | (2) Pievienot naudu | (3) Uz pirkšanas izvēlni");
         System.out.println("");
 
+        String userInput = input.nextLine();
+
         
         if (userInput.equals("1")) {
             darbibasMenuUI();
@@ -99,7 +100,6 @@ public class Darbibas {
 
     static void pievienotNauduUI() {
         Scanner input = new Scanner(System.in);
-        String userInput = input.nextLine();
 
         System.out.print("\033[H\033[2J");
         System.out.println();
@@ -114,10 +114,13 @@ public class Darbibas {
         System.out.println("(4) Pievienot 1 eiro");
         System.out.println("(5) Pievienot 2 eiro");
         System.out.println("");
-        System.out.println("(6) Uz darbību izvēlni");
         System.out.println("Pievienotā nauda:" + nauda);
         System.out.println("");
+        System.out.println("(6) Uz darbību izvēlni");
         System.out.println("(7) Uz satura izvēlni");
+        
+        String userInput = input.nextLine();
+
 
         if (userInput.equals("1")) {
             nauda += 0.10;
@@ -144,13 +147,21 @@ public class Darbibas {
     
     public static void pirksanasUI() {
         Scanner input = new Scanner(System.in);
+
+        System.out.print("\033[H\033[2J");
+        System.out.println("==========PIRKŠANA==========");
+        System.out.println("");
+        System.out.println("Ievadi produkta numuru:");
+        System.out.println("(1) Uz darbību izvēlni");
+        System.out.println();
+        System.out.println("Numurs:");
+
         String userInput = input.nextLine();
 
-        System.out.println("==========PIRKŠANA==========");
-        System.out.println("(1) Uz darbību izvēlni");
-        System.out.println("Ievadi produkta numuru:");
-        System.out.println("");
-        System.out.println("Numurs:");
+        if (!(userInput.isEmpty())) {
+            System.out.println();
+            System.out.println("JOKS! šie produkti nav domāti pirkšanai");
+        }
 
         if (userInput.equals("1")) {
             darbibasMenuUI();
