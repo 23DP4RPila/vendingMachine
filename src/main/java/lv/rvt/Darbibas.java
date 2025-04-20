@@ -105,6 +105,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("==========NAUDAS PIEVIENOŠANA==========");
         System.out.println();
+        System.out.println("Tev ir neierobežots naudas daudzums!")
         System.out.println("Ievieto pieņemtās monētas zīmes");
         System.out.println("Izvēlies vienu no opcijām:");
         System.out.println();
