@@ -15,7 +15,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("==========DARBĪBAS==========");
         System.out.println();
-        System.out.println("Izvēliaties vienu no šīm opcijām: ");
+        System.out.println("Izvēlaties vienu no šīm opcijām: ");
         System.out.println();
         System.out.println("(1) Skatīt saturu");
         System.out.println("(2) Pievienot naudu");
@@ -23,7 +23,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("Rakstiet vienu no šiem cipariem, lai veiktu atbilstošo darbību: ");
 
-        while (true) {
+        
             String userInput = input.nextLine();
                 if (userInput.equals("1")) {
                     raditSaturu();
@@ -32,15 +32,15 @@ public class Darbibas {
                 } else if (userInput.equals("3")) {
                     Galvenais.galvenaisMenu();
                 } 
-        }
     }
 
     public static void raditSaturu() {
         Scanner input = new Scanner(System.in);
-        String userInput = input.nextLine();
         int skaits;
 
         System.out.print("\033[H\033[2J");
+        System.out.println("");
+        System.out.println("(1) Uz izvēlni | (2) Pievienot naudu | (3) Uz pirkšanas izvēlni");
         System.out.println("");
         System.out.println("╔══════════════════════════════ RINDA 1 ══════════════════════════════╗");
         System.out.println("║A1, Ādažu Čipsi - Kraukšķīgie kartupeļi 100g, 1.95,                  ║");
@@ -79,19 +79,33 @@ public class Darbibas {
         System.out.println("║F4, Cepumi Selga klasiskie 180g, 1.20,                               ║");
         System.out.println("║F5, Batoniņš Snickers šokolādes 50g, 0.85,                           ║");
         System.out.println("╚═════════════════════════════════════════════════════════════════════╝ ");
-        while (true) {
-            // if... kaut kas
+        System.out.println("");
+        System.out.println("(1) Uz izvēlni | (2) Pievienot naudu | (3) Uz pirkšanas izvēlni");
+        System.out.println("");
+
+        String userInput = input.nextLine();
+
+        
+        if (userInput.equals("1")) {
+            darbibasMenuUI();
+        } else if (userInput.equals("2")) {
+            pievienotNauduUI();
+        } else if (userInput.equals("3")) {
+            pirksanasUI();
+        } else if (userInput.equals("4")) {
+            
         }
+        
     }
 
     static void pievienotNauduUI() {
         Scanner input = new Scanner(System.in);
-        String userInput = input.nextLine();
 
         System.out.print("\033[H\033[2J");
         System.out.println();
         System.out.println("==========NAUDAS PIEVIENOŠANA==========");
         System.out.println();
+        System.out.println("Tev ir neierobežots naudas daudzums!")
         System.out.println("Ievieto pieņemtās monētas zīmes");
         System.out.println("Izvēlies vienu no opcijām:");
         System.out.println();
@@ -101,10 +115,13 @@ public class Darbibas {
         System.out.println("(4) Pievienot 1 eiro");
         System.out.println("(5) Pievienot 2 eiro");
         System.out.println("");
-        System.out.println("(6) Atpakaļ uz darbību izvēlni");
         System.out.println("Pievienotā nauda:" + nauda);
         System.out.println("");
+        System.out.println("(6) Uz darbību izvēlni");
         System.out.println("(7) Uz satura izvēlni");
+        
+        String userInput = input.nextLine();
+
 
         if (userInput.equals("1")) {
             nauda += 0.10;
@@ -124,11 +141,31 @@ public class Darbibas {
         } else if (userInput.equals("6")) {
             darbibasMenuUI();
         } else if (userInput.equals("7")) {
-            Darbibas.raditSaturu();
+            raditSaturu();
         }
     }
 
+    
     public static void pirksanasUI() {
-        
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("\033[H\033[2J");
+        System.out.println("==========PIRKŠANA==========");
+        System.out.println("");
+        System.out.println("Ievadi produkta numuru:");
+        System.out.println("(1) Uz darbību izvēlni");
+        System.out.println();
+        System.out.println("Numurs:");
+
+        String userInput = input.nextLine();
+
+        if (!(userInput.isEmpty())) {
+            System.out.println();
+            System.out.println("JOKS! šie produkti nav domāti pirkšanai");
+        }
+
+        if (userInput.equals("1")) {
+            darbibasMenuUI();
+        }
     }
 }
