@@ -28,7 +28,7 @@ public class Darbibas {
                 if (userInput.equals("1")) {
                     raditSaturu();
                 } else if (userInput.equals("2")) {
-                    Darbibas.pievienotNauduUI();
+                    pievienotNauduUI();
                 } else if (userInput.equals("3")) {
                     Galvenais.galvenaisMenu();
                 } 
@@ -36,7 +36,6 @@ public class Darbibas {
 
     public static void raditSaturu() {
         Scanner input = new Scanner(System.in);
-        int skaits;
 
         System.out.print("\033[H\033[2J");
         System.out.println("");
@@ -105,7 +104,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("==========NAUDAS PIEVIENOŠANA==========");
         System.out.println();
-        System.out.println("Tev ir neierobežots naudas daudzums!")
+        System.out.println("Tev ir neierobežots naudas daudzums!");
         System.out.println("Ievieto pieņemtās monētas zīmes");
         System.out.println("Izvēlies vienu no opcijām:");
         System.out.println();
