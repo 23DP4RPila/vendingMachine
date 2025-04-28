@@ -9,17 +9,19 @@ public class Main {
 
 public static void main(String[] args)
 {   
-Scanner izvele = new Scanner(System.in);
-String izveletais = "galvenais";
+    Scanner izvele = new Scanner(System.in);
+    String izveletais = "galvenais";
 
-Galvenais.galvenaisMenu();
-
-while (true) {
-    izveletais = izvele.nextLine();
-
-if (izveletais.equals("galvenais")) {
     Galvenais.galvenaisMenu();
+
+    while (true) {
+        izveletais = izvele.nextLine();
+
+    if (izveletais.equals("galvenais")) {
+        Galvenais.galvenaisMenu();
+    }
+
 }
 }
-}
+
 }
