@@ -25,4 +25,3 @@ public class Product {
     }
     }
 }
-// ✅ Print stock values
