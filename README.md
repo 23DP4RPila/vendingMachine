@@ -11,13 +11,9 @@
     - skatīt saturu
     - pirkt
     - pievienot naudu
-- iegūt naudu
-    - azartspēles
-    - darbs
 - iziet
 
 
 ## jaunais plāns
 
-apvienot darbības vienā
-- viens liels menu, kurā atrodas visas mazās darbības
+- filtrēšana, kārtošana pēc... 
