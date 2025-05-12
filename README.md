@@ -16,4 +16,8 @@
 
 ## jaunais plāns
 
-- filtrēšana, kārtošana pēc... 
+- pievienot spēju pirkt produktus
+
+- filtrēšana, kārtošana pēc alfabēta, datuma
+
+-saglabāt pirkumu vēsturi

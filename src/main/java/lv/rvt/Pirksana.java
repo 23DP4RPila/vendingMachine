@@ -23,6 +23,7 @@ public class Pirksana {
 
         if (userInput.equals("1")) {
             Darbibas.darbibasMenuUI();
+            
         }
     }
 }
