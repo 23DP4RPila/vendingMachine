@@ -1,7 +1,5 @@
 package lv.rvt;
 
-import java.net.Socket;
-import java.nio.channels.Pipe.SourceChannel;
 import java.util.Scanner;
 
 public class Darbibas {
@@ -22,7 +20,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("Rakstiet vienu no šiem cipariem, lai veiktu atbilstošo darbību: ");
 
-        
+
             String userInput = input.nextLine();
                 if (userInput.equals("1")) {
                     Saturs.raditSaturu();

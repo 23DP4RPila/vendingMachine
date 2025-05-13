@@ -3,10 +3,11 @@ package lv.rvt;
 import java.util.Scanner;
 
 public class Nauda {
-    static double nauda = 0;
+    public Nauda(double nauda) {
 
+    }
     public static void pievienotNauduUI() {
-        
+
         Scanner input = new Scanner(System.in);
 
         System.out.print("\033[H\033[2J");
@@ -32,24 +33,28 @@ public class Nauda {
 
 
         if (userInput.equals("1")) {
-            nauda += 0.10;
-            pievienotNauduUI();
+            pievienotNaudu(0.10);
         } else if (userInput.equals("2")) {
-            nauda += 0.20;
-            pievienotNauduUI();
+            pievienotNaudu(0.20);
         } else if (userInput.equals("3")) {
-            nauda += 0.50;
-            pievienotNauduUI();
+            pievienotNaudu(0.50);
         } else if (userInput.equals("4")) {
-            nauda += 1;
-            pievienotNauduUI();
+            pievienotNaudu(1.0);
         } else if (userInput.equals("5")) {
-            nauda += 2;
-            pievienotNauduUI();
+            pievienotNaudu(2.0);
         } else if (userInput.equals("6")) {
             Darbibas.darbibasMenuUI();
         } else if (userInput.equals("7")) {
             Saturs.raditSaturu();
         }
+    }
+
+    public void pievienotNaudu(double nauda) {
+        this.nauda += nauda;
+    }
+
+
+    public double getNauda() {
+        return this.nauda;
     }
 }

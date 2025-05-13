@@ -2,7 +2,7 @@ package lv.rvt;
 
 import java.util.Scanner;
 
-public class Galvenais {    
+public class Galvenais {
     public static void galvenaisMenu() {
         Scanner input = new Scanner(System.in);
 
@@ -30,9 +30,8 @@ public class Galvenais {
 
                     System.exit(0);
                 } else if (userInput.equals("3")) {
-                    Product.reader();
+                    Products.reader();
                 }
-                } 
+                }
         }
     }
-
