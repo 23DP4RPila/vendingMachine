@@ -16,7 +16,8 @@ public class Darbibas {
         System.out.println();
         System.out.println("(1) Skatīt saturu");
         System.out.println("(2) Pievienot naudu");
-        System.out.println("(3) Atpakaļ uz galveno izvēlni");
+        System.out.println("(3) Pirkumu vēsture");
+        System.out.println("(4) Atpakaļ uz galveno izvēlni");
         System.out.println();
         System.out.println("Rakstiet vienu no šiem cipariem, lai veiktu atbilstošo darbību: ");
 
@@ -27,9 +28,13 @@ public class Darbibas {
                 } else if (userInput.equals("2")) {
                     Nauda.pievienotNauduUI();
                 } else if (userInput.equals("3")) {
+                    Products.pirkumuVesture();
+                    Products.pirkumuVesture();
+                    System.out.println("[] = nav pirkumu vēstures");
+                } else if (userInput.equals("4")) {
                     Galvenais.galvenaisMenu();
-                } 
-    }
+                }
+            }
 }
 
     

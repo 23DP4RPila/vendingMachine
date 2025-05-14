@@ -14,7 +14,6 @@ public class Galvenais {
         System.out.println();
         System.out.println("(1) Veikt darbības ar tirdzniecības automātu");
         System.out.println("(2) Iziet");
-        System.out.println("(3) testēt faila lasītāju");
         System.out.println();
         System.out.println("Rakstiet vienu no šiem cipariem, lai veiktu atbilstošo darbību: ");
         
@@ -26,11 +25,9 @@ public class Galvenais {
                     System.out.print("\033[H\033[2J");
                     System.out.println(ConsoleColors.RED_BACKGROUND);
                     System.out.println("Programma ir beigusies.");
-                    System.out.println();
+                    System.out.println(ConsoleColors.RESET);
 
                     System.exit(0);
-                } else if (userInput.equals("3")) {
-                    Products.reader();
                 }
                 }
         }
