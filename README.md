@@ -29,8 +29,10 @@ kad esat izvēlējušies kādu no opcijām, spiežat taustiņu `Enter`
 # Vēl vajag
 
 - padziļinātāku saprašanu par Java pamatiem
-- CSV faila lasīšanu
+- CSV faila lasīšanu (2 CSV faili vismaz)
 - ArrayList pielietošanu
 - šķirošanu, filtrēšanu
 - error handling
+- aprēķini
+- json failus varbūt pat
 
