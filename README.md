@@ -1,23 +1,28 @@
+# instalācija
+- lejupielādējiet repozitoriju, klikšķinot uz zaļās pogas, repzitorija lapas labajā augšpuses zonā, virs failu saraksta, spiežot "lejupielādēt ZIP failu"
+
+## nepieciešamā programmatūra
+### ieteicamie </br>
+- Visual Studio Code
+  (pēc instalācijas, Jums tiks automātiski ieteikti nepieciešamie paplašinājumi Java programmēšanas valodas pielietošanai)
+- IntelliJ
+
 # vendingMachine
 
--tirdzniecības automāts, kurš glabā informāciju par tā saturu
--produktu cenas
--strādāšana, lai iegūtu naudu
--produktu iegāde
+-tirdzniecības automāts
+ -satura skatīšana
+ -naudas "pievienošana"
+ -pirkšana
+ -pirkumu vēsture
+ 
 
-# Nepieciešama MENU pārorganizācija - ir liekas pogas un darbības
-# JAUNAIS MENU-------
-- veikt darbības ar automātu
-    - skatīt saturu
-    - pirkt
-    - pievienot naudu
-- iziet
+# pamācība
 
+## navigācija
+Lai izvēlētos tālākās darbības, lasiet izvēles iespējas (apzīmētas kā `(1) izvēle`)
 
-## jaunais plāns
+## ievade
+lasiet tekstu uz ekrāna, lai zinātu, kurus tastatūras burtus spiest.
+visbiežāk tiek piedāvātas ciparu izvēles.
+kad esat izvēlējušies kādu no opcijām, spiežat taustiņu `Enter`
 
-- pievienot spēju pirkt produktus
-
-- filtrēšana, kārtošana pēc alfabēta, datuma
-
--saglabāt pirkumu vēsturi
