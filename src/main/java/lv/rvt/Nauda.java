@@ -32,22 +32,23 @@ public class Nauda {
 
         if (userInput.equals("1")) {
             nauda += 0.10;
+            pievienotNauduUI();
         } else if (userInput.equals("2")) {
             nauda += 0.20;
+            pievienotNauduUI();
         } else if (userInput.equals("3")) {
             nauda += 0.50;
+            pievienotNauduUI();
         } else if (userInput.equals("4")) {
             nauda += 1;
+            pievienotNauduUI();
         } else if (userInput.equals("5")) {
             nauda += 2;
+            pievienotNauduUI();
         } else if (userInput.equals("6")) {
             Darbibas.darbibasMenuUI();
         } else if (userInput.equals("7")) {
             Saturs.raditSaturu();
         }
-    }
-
-    public void pievienotNaudu(double nauda) {
-        this.nauda += nauda;
-    }
+}
 }

@@ -43,14 +43,17 @@ public class Products {
                 "F4, Cepumi Nelga klasiskie 180g, 1.20,                               ",
                 "F5, Batoniņš Bruners šokolādes 50g, 0.85,                           "
                 };
+                
                 static ArrayList<String> pirkumiList = new ArrayList<>();
 
-    
+                
+
     public static void appendList(int index) {
         pirkumiList.add(produkti[index]);
 }
+public static void pirkumuVesture() {
+    System.out.println(pirkumiList);
+}
 
-    public static void pirkumuVesture() {
-        System.out.println(pirkumiList);
-    }
+    
 }

@@ -26,3 +26,11 @@ lasiet tekstu uz ekrāna, lai zinātu, kurus tastatūras burtus spiest.
 visbiežāk tiek piedāvātas ciparu izvēles.
 kad esat izvēlējušies kādu no opcijām, spiežat taustiņu `Enter`
 
+# Vēl vajag
+
+- padziļinātāku saprašanu par Java pamatiem
+- CSV faila lasīšanu
+- ArrayList pielietošanu
+- šķirošanu, filtrēšanu
+- error handling
+

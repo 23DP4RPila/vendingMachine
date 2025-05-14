@@ -14,7 +14,7 @@ public class Darbibas {
         System.out.println();
         System.out.println("Izvēlaties vienu no šīm opcijām: ");
         System.out.println();
-        System.out.println("(1) Skatīt saturu");
+        System.out.println("(1) Skatīt saturu un pirkt");
         System.out.println("(2) Pievienot naudu");
         System.out.println("(3) Pirkumu vēsture");
         System.out.println("(4) Atpakaļ uz galveno izvēlni");
@@ -29,8 +29,6 @@ public class Darbibas {
                     Nauda.pievienotNauduUI();
                 } else if (userInput.equals("3")) {
                     Products.pirkumuVesture();
-                    Products.pirkumuVesture();
-                    System.out.println("[] = nav pirkumu vēstures");
                 } else if (userInput.equals("4")) {
                     Galvenais.galvenaisMenu();
                 }

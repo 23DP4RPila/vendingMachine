@@ -11,16 +11,17 @@ public class Pirksana {
         System.out.println("Ievadi produkta numuru:");
         System.out.println("(1) Uz darbību izvēlni");
         System.out.println();
-        System.out.println("Numurs:");
+        System.out.println("Numurs Formātā BurtsCipars (A-F;1-5 - piemēram, A2):");
     }
 
 
 
     public static void pirksana() {
-        Scanner input = new Scanner(System.in);
-        String userInput = input.nextLine();
         
+        while(true) {
+            Scanner input = new Scanner(System.in);
 
+            String userInput = input.nextLine();
         if (userInput.equals("A1")) {
             System.out.println("Tu nopirki: Vangažu Čipsi - Kraukšķīgie kartupeļi 100g, 1.95€");
             Products.appendList(0);
@@ -112,5 +113,6 @@ public class Pirksana {
             System.out.println("Tu nopirki: Batoniņš Bruners šokolādes 50g, 0.85€");
             Products.appendList(29);
         }
+    }
 }
 }
